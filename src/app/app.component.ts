@@ -13,7 +13,7 @@ import { RoomsComponent } from "./rooms/rooms.component";
     // `,
     // scss
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, RoomsComponent]
+    imports: [RouterOutlet, RoomsComponent ]
 })
 
 export class AppComponent {
