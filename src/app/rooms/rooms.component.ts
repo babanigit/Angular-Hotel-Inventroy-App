@@ -20,7 +20,7 @@ export class RoomsComponent {
 
   rooms: IRoom = {
     totalRooms: 20,
-    // availableRooms : 10,
+    availableRooms : 10,
     bookedRooms: 5
   }
 
@@ -36,21 +36,21 @@ export class RoomsComponent {
       rating: 4
     },
     {
-      roomNumber: 32,
-      roomType: "deluxe Room",
+      roomNumber: 42,
+      roomType: "small Room",
       amenities: "air conditioner free wifi, tv",
       price: 1000,
-      photos: "https.google.com",
+      photos: "https.gyro.com",
       checkinTime: new Date("11-nov-2021"),
       checkoutTime: new Date("12-nov-2021"),
       rating: 4
     },
     {
-      roomNumber: 32,
-      roomType: "deluxe Room",
+      roomNumber: 97,
+      roomType: "medium Room",
       amenities: "air conditioner free wifi, tv",
       price: 1000,
-      photos: "https.google.com",
+      photos: "https.hello.com",
       checkinTime: new Date("11-nov-2021"),
       checkoutTime: new Date("12-nov-2021"),
       rating: 4
