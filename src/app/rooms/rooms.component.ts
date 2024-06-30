@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { IRoom } from './rooms';
+import { IRoom, IRooms } from './rooms';
 
 
 @Component({
@@ -14,15 +14,48 @@ import { IRoom } from './rooms';
 
 export class RoomsComponent {
 
-  hotelName= "Hilton Hotel"
-  numberOfRooms= 10
-  hideRooms=false
-  
-  rooms:IRoom = {
+  hotelName = "Hilton Hotel"
+  numberOfRooms = 10
+  hideRooms = false
+
+  rooms: IRoom = {
     totalRooms: 20,
     // availableRooms : 10,
-    bookedRooms : 5
+    bookedRooms: 5
   }
+
+  roomList: IRooms[] = [
+    {
+      roomNumber: 32,
+      roomType: "deluxe Room",
+      amenities: "air conditioner free wifi, tv",
+      price: 1000,
+      photos: "https.google.com",
+      checkinTime: new Date("11-nov-2021"),
+      checkoutTime: new Date("12-nov-2021"),
+      rating: 4
+    },
+    {
+      roomNumber: 32,
+      roomType: "deluxe Room",
+      amenities: "air conditioner free wifi, tv",
+      price: 1000,
+      photos: "https.google.com",
+      checkinTime: new Date("11-nov-2021"),
+      checkoutTime: new Date("12-nov-2021"),
+      rating: 4
+    },
+    {
+      roomNumber: 32,
+      roomType: "deluxe Room",
+      amenities: "air conditioner free wifi, tv",
+      price: 1000,
+      photos: "https.google.com",
+      checkinTime: new Date("11-nov-2021"),
+      checkoutTime: new Date("12-nov-2021"),
+      rating: 4
+    }
+  ]
 
   constructor() {
 
@@ -31,11 +64,11 @@ export class RoomsComponent {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    
+
   }
 
   toggle() {
-    this.hideRooms=!this.hideRooms;
+    this.hideRooms = !this.hideRooms;
   }
 
   someVariable = "value2"
